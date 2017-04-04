@@ -1,0 +1,30 @@
+{
+  "name": "angular-bootstrap-seed",
+  "version": "1.0.0",
+  "description": "The initial step to setup environment to start angular web application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mani-EastMinds/angular-bootstrap-seed.git"
+  },
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "seed"
+  ],
+  "author": "Mani SRIPATHI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mani-EastMinds/angular-bootstrap-seed/issues"
+  },
+  "homepage": "https://github.com/Mani-EastMinds/angular-bootstrap-seed#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "connect-modrewrite": "^0.10.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

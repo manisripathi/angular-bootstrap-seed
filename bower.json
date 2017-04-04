@@ -1,0 +1,36 @@
+{
+  "name": "angular-bootstrap-seed",
+  "description": "The initial step to setup environment to start angular web application.",
+  "main": "index.js",
+  "authors": [
+    "Mani SRIPATHI"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "seed"
+  ],
+  "homepage": "https://github.com/Mani-EastMinds/angular-bootstrap-seed",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-material": "^1.1.3",
+    "angular-moment": "^1.0.1",
+    "moment": "^2.18.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "underscore": "^1.8.3",
+    "lodash": "^4.17.4",
+    "angular-momentjs": "^0.2.2",
+    "angular-route": "^1.6.4",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
