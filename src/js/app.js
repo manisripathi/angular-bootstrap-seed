@@ -6,20 +6,24 @@ var app = angular.module('seedApp', [
     'ngMaterial'
 ]);
 
-app.config(['$compileProvider', '$httpProvider', '$routeProvider', '$locationProvider', '$rootScopeProvider',
-    function($compileProvider, $httpProvider, $routeProvider, $locationProvider, $rootScopeProvider) {
+app.config(['$compileProvider', '$httpProvider', '$controllerProvider', '$routeProvider', '$locationProvider', '$rootScopeProvider',
+    function($compileProvider, $httpProvider, $controllerProvider, $routeProvider, $locationProvider, $rootScopeProvider) {
         var controllerName = '';
 
         $rootScopeProvider.digestTtl(15);
 
-        $routeProvider.when('/', {
-            templateUrl: function() {
-                return '/templates/home.html';
-            },
-            controller: function() {
-                return 'homeController';
-            }
-        });
+        $routeProvider
+            .when('/', {
+                templateUrl: '/templates/main.html'
+            })
+            .when('/home', {
+                templateUrl: '/templates/home.html',
+                controller: 'homeController',
+                controllerAs: 'home'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
 
         $locationProvider.html5Mode(true);
 
