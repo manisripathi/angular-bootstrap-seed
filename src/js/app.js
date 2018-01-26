@@ -13,13 +13,20 @@ app.config(['$compileProvider', '$httpProvider', '$controllerProvider', '$routeP
         $rootScopeProvider.digestTtl(15);
 
         $routeProvider
-            .when('/', {
-                templateUrl: '/templates/main.html'
+            .when('/main', {
+                templateUrl: '/templates//main.html'
+                // controller: 'homeController',
+                // controllerAs: 'home'
             })
             .when('/home', {
                 templateUrl: '/templates/home.html',
                 controller: 'homeController',
                 controllerAs: 'home'
+            })
+            .when('/form', {
+                templateUrl: '/templates/form.html',
+                controller: 'formController',
+                controllerAs: 'form'
             })
             .otherwise({
                 redirectTo: '/'
